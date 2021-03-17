@@ -1,0 +1,45 @@
+.container{
+    position: relative;
+    height: 500px;
+    width: 500px;
+    margin: 10px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 239, 239);
+     }
+     .container image{
+         position: absolute;
+         object-fit: fill;
+         }
+         .box{
+              position: absolute;
+               border-color: rgb(255, 255, 255);
+               border-width:1px ;
+               border-style: solid;
+               top: 15%;
+               left: 15%;
+               width: 400px;
+               height: 300px;
+               opacity: 0;
+              transform: scale(0.5);
+               }
+         .box h2{
+           position: absolute;
+           top: 30%;
+           left: 40%;
+           font-size: 30px;
+           line-height: 2px;
+           }
+         .box div{
+           position: absolute;
+           top: 55%;
+           left: 25%;
+           font-size: 20px;
+         }
+         .box:hover{
+          opacity: 1;
+          transform: scale(1);
+          transition: 1s;
+     }
+     
+
