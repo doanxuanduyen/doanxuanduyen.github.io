@@ -1,0 +1,284 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+/* Set font cho web */
+/* tranh content bi tran` ra ngoai */
+* {
+    box-sizing: border-box;
+	font-family: 'Kiwi Maru', serif;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+/* CSS Trang tri START */
+/* line */
+.line-top {
+	height: 10px;
+	background-color: rgb(17, 94, 117);
+	width: 95%;
+	position: absolute;
+	top: 0.5%;
+	left: 2%;
+}
+.line-bottom {
+    height: 10px;
+	background-color: rgb(17, 94, 117);
+	position: absolute;
+	width: 95%;
+	position: absolute;
+	bottom: 0.5%;
+	left: 2%;
+}
+/* circle */
+.circle {
+	width: 280px;
+	height: 280px;
+	border-radius: 50% ;
+	background-color: white;
+	position: absolute;
+	top: 16%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+	z-index: 999;
+}
+/* CSS Trang tri END */
+
+.wrapper-flex {
+	float: left;
+    width: 100%;
+    position: relative;
+}
+
+/* CSS Main START */
+.top {
+	position: relative;
+	height: 400px;
+}
+/* Siderbar */
+.sidebar {
+    float: left;
+    width: 45%;
+    background-color: rgb(114, 199, 202);
+	padding: 30px;
+}
+
+/* Content */
+.content {
+    width: 55%;
+    float: right;
+    background-color: white;
+	padding: 25px;
+}
+/* Name */
+.name-cover {
+	background-color: rgb(41, 171, 175);
+	padding: 30px 0;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.name {
+	width: 150px;
+	margin: auto;	
+}
+.name-title {
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 40px;
+}
+.tagline{
+	font-weight: lighter;
+}
+/* Content Elements */
+.little-content .title {
+	padding: 2px;
+	display: flex;
+	align-items: center;
+}
+.little-content h2 {
+	font-size: 25px;
+	margin: 0;
+	text-transform: uppercase;
+}
+.little-content p {
+	text-align: justify;
+}
+.little-content p i {
+	margin: 0 10px;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+	border: solid 2px;
+	border-radius: 50%;
+	padding: 5px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* contact */
+.contact {
+	margin: 0;
+	position: absolute;
+	top: 45%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.contact-icon {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* progress */
+progress[value] {
+	-webkit-appearance: none;
+	 appearance: none;
+	 height: 6px;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: #eee;
+  	border-radius: 2px;
+  	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+	background-color: black;
+	border-radius: 5px; 
+	background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+progress[value]::-webkit-progress-value::after {
+	content: "";
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background-color: white;
+}
+/* tittle */
+.country {
+	width: 80px;
+	margin: 15px;
+}
+/* Skill */
+.flex {
+	display: flex;
+	align-items: center;
+}
+.column {
+	margin: 15px;
+}
+/* Software */
+img {
+	object-fit: cover;
+	margin: 20px;
+}
+/* icon inter */
+.crow {
+	margin: 15px;
+	font-size: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+/* CSS Main END */
+
+
+/* responsive */
+
+/* mobile */
+@media only screen and (max-width: 1040px) {
+	.wrapper-flex {
+		float: none;
+		font-size: 16px;
+	}
+	.sidebar {
+		float: none;
+		width: 100%;
+		padding: 10px;
+	}
+	.content {
+		float:none ;
+		width: 100%;
+	}
+	.line-top {
+		height: 5px;
+		top: 0,2%;
+	}
+	.line-bottom {
+		height: 5px;
+		bottom: 0.2%;
+	}
+	.circle {
+		width: 180px;
+		height: 180px;
+		top: 6%;
+		left: 48%;
+	}
+	.name-title {
+		font-size: 30px;
+		display: flex;
+		justify-content: center;
+	}
+	.name-cover {
+		top: 75%;
+		padding: 5px;
+		width: 100%;
+		text-align: center;
+	}
+	.little-content h2 {
+		font-size: 16px;
+	}
+}
+
+/* 320px */
+@media only screen and (max-width: 375px) {
+	.wrapper-flex {
+		font-size: 12px;
+	}
+	.circle {
+		left: 43%;
+	}
+	.name-title {
+		font-size: 20px;
+	}
+	.name-cover {
+		top: 85%;
+	}
+}
+
+/* 425px */
+@media only screen and (max-width: 425px) {
+	.circle {
+		top: 5%;
+		left: 45%;
+	}
+}
+
+/* 768px */
+ @media only screen and (min-width: 768px) and (max-with: 1440px) { 
+	.flex-big {
+		display: flex;
+		align-content: center;
+	}
+	.little-content {
+		margin: 10px;
+	}
+} 
+
+
+

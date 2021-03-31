@@ -1,0 +1,154 @@
+*{
+	box-sizing: border-box;
+}
+.wrapper-flex {
+	 width: 100%;
+	 line-height: 2;
+	 box-sizing: border-box;
+     font-size: 20px;
+	 position: relative;
+}
+    
+/* Siderbar */
+      .siderbar {
+		  height: 1000px;
+		  float: left;
+		  width: 45%;
+		  background-color: rgb(115, 191, 194);
+		  padding-bottom: 100px;
+	  }
+
+.move {
+	margin-top: 15%;
+}
+
+
+/* Content */
+      .content {
+		  margin-top: 80px;
+		  height: 800px;
+		  width: 50%;
+		  float: right;
+		  background-color: white;
+	  }
+	
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+.content-title {
+	display: flex;
+	align-items: center;
+}
+
+/* icon */
+.icon {
+	width: 30px;
+	height: 30px;
+	border: solid 2px;
+	border-radius: 50%;
+	padding: 5px;
+	margin-right: 10px;
+	/* center */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* module title */
+.module-title {
+	display: flex;
+	align-items: center;
+	margin:20px ;
+}
+
+/* progress bar */
+.flex-1 {
+	margin: 10px;
+}
+
+/* icon inter */
+.crow {
+	 font-size: 50px;
+	 text-align: center;
+     display: flex;
+	 flex-direction: row;
+	 justify-content: space-evenly;
+}
+
+.columm {
+	margin-left: 20px;
+}
+
+/* little */
+.little {
+	margin-left: 4px;
+}
+
+/* name */
+.name {
+	height: 200px;
+    width: 90 px;
+	background-color: rgb(115, 191, 194);
+	margin-bottom: 100px;
+	font-size: 30px;
+	line-height: 10px;
+
+}
+
+.name-title {
+	position: absolute;
+	align-items: center;
+	top: 20%;
+	right: 15%;
+}
+.name-title h3 {
+	font-weight: lighter;
+}
+
+
+.contact .module-content {
+	margin-bottom: 50px;
+}
+
+/* line */
+.line-top {
+	height: 10px;
+	background-color: rgb(17, 94, 117);
+	width: 95%;
+	position: absolute;
+	top: 0.5%;
+	left: 2%;
+}
+
+.line-bottom {
+    height: 10px;
+	background-color: rgb(17, 94, 117);
+	width: 95%;
+	transform: translateY(-200%); 
+	
+}
+/* circle */
+.circle {
+	width: 250px;
+	height: 250px;
+	border-radius: 50% ;
+	background-color: white;
+	position: absolute;
+	top: 17%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+}
+
+
+.circle-out {
+	width: 300px;
+	height: 300px;
+	border-radius: 50% ;
+	position: absolute;
+	top: 17%;
+	left: 45%;
+	transform: translate(-50%,-50%);
+	border: 3px solid rgb(28, 83, 116);
+} 
